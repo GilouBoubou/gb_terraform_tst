@@ -3,17 +3,12 @@ variable "aws_region" {
   default = "eu-north-1"
 }
 
-variable "db_table_name" {
+variable "AWS_ACCESS_KEY_ID" {
   type    = string
-  default = "terraform-learn"
+  default = "AWS_ACCESS_KEY_ID"
 }
 
-variable "db_read_capacity" {
-  type    = number
-  default = 1
-}
-
-variable "db_write_capacity" {
-  type    = number
-  default = 1
+variable "AWS_SECRET_ACCESS_KEY" {
+  type    = string
+  default = "AWS_SECRET_ACCESS_KEY"
 }
